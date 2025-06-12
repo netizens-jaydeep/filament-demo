@@ -40,7 +40,7 @@ WORKDIR /app
 COPY . .
 
 # Install dependencies
-RUN composer install --no-dev --optimize-autoloader
+RUN composer install --no-dev
 
 # Build frontend assets
 RUN npm install && npm run build
